@@ -19,7 +19,7 @@ export function Features() {
           <div className="absolute inset-[10%] border border-accent/20 -rotate-[5deg]" />
           <SafeImage
             src="/images/r36s-violeta-manos.jpg"
-            alt="R36S en uso"
+            alt="Jugando con la consola retro R36S violeta transparente en la mano"
             className="absolute inset-[6%] w-[88%] h-[88%] object-cover border border-border"
           />
         </Reveal>

@@ -8,10 +8,12 @@ export function SafeImage({
   src,
   alt,
   className,
+  priority = false,
 }: {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -36,7 +38,8 @@ export function SafeImage({
       alt={alt}
       className={className}
       onError={() => setFailed(true)}
-      loading="lazy"
+      loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
     />
   );
 }

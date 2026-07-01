@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { StructuredData } from "@/components/StructuredData";
 import { Hero } from "@/components/sections/Hero";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { PromoBanner } from "@/components/sections/PromoBanner";
@@ -14,6 +15,7 @@ import { Contact } from "@/components/sections/Contact";
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <Navbar />
       <main>
         <Hero />

@@ -1,3 +1,5 @@
+export const SITE_URL = "https://r36-s.vercel.app";
+
 export const WHATSAPP_NUMBER = "5491140591621";
 
 export function waLink(message: string) {

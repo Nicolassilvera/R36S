@@ -26,6 +26,7 @@ export function HeroSlideshow() {
           key={src}
           src={src}
           alt="Consola retro R36S violeta transparente"
+          priority={i === 0}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms] ease-in-out ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
